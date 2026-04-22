@@ -1,13 +1,5 @@
 @charset "UTF-8";
-/*-----------------------------------------------------------------------------------
 
-    Theme Name: mak – Roofing Services HTML Template
-    Author: Ordianit
-    Support:ordianit@gmail.com
-    Description: mak – Roofing Services HTML Template
-    Version: 1.0.0
-
------------------------------------------------------------------------------------
 
 /************ TABLE OF CONTENTS ***************
 
@@ -49,7 +41,7 @@
   /**
   @font family declaration
   */
-  --it-ff-body: 'DM Sans', serif;
+  --it-ff-body: 'helvetica', serif;
   --it-ff-heading: 'Plus Jakarta Sans' sans-serif;
   --it-ff-poppins: 'Poppins Sans' sans-serif;
   --it-ff-fontawesome: Font Awesome 6 Pro;
@@ -590,8 +582,10 @@ input[type=color] {
   position: absolute;
   bottom: -1px;
   left: 1px;
+  color:#fd9822 !important;
   transition: all 0.2s ease-out;
 }
+
 .it-btn-orange i svg:last-child {
   left: -12px;
   bottom: -12px;
@@ -817,18 +811,22 @@ input[type=color] {
   animation-name: fadeInDown;
 }
 
-@keyframes animate-pulse {
+ @keyframes animate-pulse {
   0% {
-    box-shadow: 0 0 0 0 rgba(224, 59, 59, 0.8), 0 0 0 0 rgba(224, 59, 59, 0.8);
+    box-shadow: 0 0 0 0 rgba(255, 178, 29, 0.8), 
+                0 0 0 0 rgba(255, 178, 29, 0.8);
   }
   40% {
-    box-shadow: 0 0 0 50px rgba(224, 59, 59, 0), 0 0 0 0 rgba(224, 59, 59, 0.8);
+    box-shadow: 0 0 0 50px rgba(255, 178, 29, 0), 
+                0 0 0 0 rgba(255, 178, 29, 0.8);
   }
   80% {
-    box-shadow: 0 0 0 50px rgba(224, 59, 59, 0), 0 0 0 30px rgba(224, 59, 59, 0);
+    box-shadow: 0 0 0 50px rgba(255, 178, 29, 0), 
+                0 0 0 30px rgba(255, 178, 29, 0);
   }
   100% {
-    box-shadow: 0 0 0 0 rgba(224, 59, 59, 0), 0 0 0 30px rgba(224, 59, 59, 0);
+    box-shadow: 0 0 0 0 rgba(255, 178, 29, 0), 
+                0 0 0 30px rgba(255, 178, 29, 0);
   }
 }
 .pulse {
@@ -1183,7 +1181,7 @@ input[type=color] {
 @media (max-width: 767px) {
   .itoffcanvas {
     width: 300px;
-    padding: 40px 35px;
+    padding: 40px 19px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -1219,7 +1217,7 @@ input[type=color] {
   top: 42px;
   transition: 1s;
   font-weight: 300;
-  opacity: 0.2;
+  opacity: 1;
   -webkit-transition: all 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   -moz-transition: all 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   transition: all 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
@@ -1350,7 +1348,7 @@ input[type=color] {
 }
 @media (max-width: 767px) {
   .itoffcanvas__info-address a {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 .itoffcanvas__info-address a:hover {
@@ -1406,6 +1404,15 @@ input[type=color] {
   width: 100%;
 }
 
+.it-header-menu ul li.active > a {
+    color: var(--it-theme-1); /* active text color */
+    font-weight: 700;
+    border-bottom: 2px solid var(--it-theme-1);
+}
+.it-footer-widget-menu ul li.active a {
+    color: var(--it-theme-1);
+    font-weight: 600;
+}
 .it-breadcrumb-overlay {
   position: relative;
   padding-top: 333px;
@@ -1529,7 +1536,7 @@ input[type=color] {
   padding: 35px 0;
   padding-right: 90px;
   width: 100%;
-  color: var(--it-common-white);
+  color: #fd9822;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .it-custom-accordion .accordion-buttons {
@@ -2113,7 +2120,8 @@ span.flaticon-multiply i {
 }
 @media (max-width: 767px) {
   .it-section-title {
-    font-size: 30px;
+    font-size: 20px;
+    line-height: 1.5;
   }
   .it-section-title br {
     display: none;
@@ -5266,7 +5274,7 @@ body .ui-tooltip {
   font-size: 25px;
   line-height: 1.28;
   text-transform: uppercase;
-  color: var(--it-common-white);
+  color: #FFB21D;
   margin-bottom: 35px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
@@ -5341,12 +5349,13 @@ body .ui-tooltip {
 .it-footer-widget-tel-box {
   position: relative;
   display: flex;
-  align-items: center;
+ 
 }
 .it-footer-widget-tel-box a {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.62;
+  margin-top: 9px;
   transition: 0.3s;
   color: var(--it-common-white);
 }
@@ -5378,7 +5387,7 @@ body .ui-tooltip {
   background-color: var(--it-theme-1);
 }
 .it-footer-widget-tel-box span svg, .it-footer-widget-tel-box span i {
-  color: var(--it-common-white);
+  color: #fd9822;
 }
 .it-footer-style-2 .it-footer-widget-text p {
   margin-right: -10px;
@@ -5529,7 +5538,7 @@ body .ui-tooltip {
   }
 }
 .it-copyright-left p a {
-  color: var(--it-theme-1);
+  color: #fff;
 }
 .it-copyright-border {
   padding: 17px 0;
@@ -5560,6 +5569,7 @@ body .ui-tooltip {
 }
 .it-copyright-social a:hover {
   border-color: #fff;
+  color:#fd9822;
 }
 .it-copyright-style-2.it-copyright-border {
   border-top: none;
@@ -5744,7 +5754,7 @@ body .ui-tooltip {
   margin-right: 0;
 }
 .it-header-top-social-box a:hover {
-  color: var(--it-theme-1);
+  color: #fd9822;
 }
 .it-header-top-contact {
   padding-right: 45px;
@@ -7410,6 +7420,7 @@ body .ui-tooltip {
 .it-about-funfact-number {
   font-weight: 600;
   font-size: 80px;
+  color: #FFB21D;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px) {
   .it-about-funfact-number {
@@ -9590,7 +9601,7 @@ body .ui-tooltip {
 /*----------------------------------------*/
 .it-brand-ptb {
   padding-top: 55px;
-  padding-bottom: 130px;
+  padding-bottom: 65px;
   border-top: 1px solid rgba(9, 18, 22, 0.1);
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
@@ -9638,9 +9649,12 @@ body .ui-tooltip {
   transition: 0.3s;
   filter: grayscale(100%);
   opacity: 0.5;
+  width: 100px;
 }
 .it-brand-item:hover {
-  filter: grayscale(0%);
+  filter: brightness(0) saturate(100%) 
+          invert(74%) sepia(66%) saturate(749%) 
+          hue-rotate(2deg) brightness(101%) contrast(101%);
   opacity: 1;
 }
 .it-brand-active {
@@ -9750,7 +9764,7 @@ body .ui-tooltip {
   color: var(--it-common-white);
 }
 .it-slider-title span {
-  color: var(--it-theme-1);
+  color: #fd9822;
 }
 .it-slider-title img {
   border-radius: 100px;
@@ -11044,7 +11058,7 @@ body .ui-tooltip {
   font-size: 24px;
   margin-bottom: 10px;
   display: block;
-  color: var(--it-common-white);
+  color: #fd9822;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .it-contact-list span {
@@ -11071,9 +11085,10 @@ body .ui-tooltip {
   width: 53px;
   line-height: 53px;
   text-align: center;
-  border-radius: 50%;
+  border-radius: 20% !important;
+
   margin-right: 15px;
-  background-color: #F3F3F3;
+  background-color: var(--it-theme-1);
   border: 1px solid rgba(121, 121, 121, 0.1);
 }
 .it-contact-list-box:hover .it-contact-list-icon span {
@@ -11099,7 +11114,7 @@ body .ui-tooltip {
   font-size: 24px;
   margin-bottom: 10px;
   display: block;
-  color: var(--it-common-white);
+  color: #fd9822;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .it-contact-social span {
@@ -11373,7 +11388,7 @@ body .ui-tooltip {
   height: 189px;
 }
 .it-contact-style-3 .it-contact-form-box {
-  background-color: var(--it-gray-1);
+  background-color: #fff;
 }
 .it-contact-style-3 .it-contact-list-box {
   padding: 29px 30px;
@@ -11412,7 +11427,7 @@ body .ui-tooltip {
   font-weight: 500;
   font-size: 25px;
   margin-bottom: 0;
-  color: var(--it-common-black);
+  color: #fd9822;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .it-contact-style-3 .it-contact-list span {
@@ -11431,7 +11446,11 @@ body .ui-tooltip {
 .it-contact-style-3 .it-contact-list a {
   font-weight: 500;
   font-size: 20px;
+  color: #000;
+}
+.it-contact-style-3 .it-contact-list a:hover{
   color: var(--it-theme-1);
+
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .it-contact-style-3 .it-contact-list a {
@@ -14754,7 +14773,7 @@ input[type=radio] {
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .it-choose-3-more-info p {
-    font-size: 14px;
+    font-size: 13px;
     line-height: 1.7;
   }
 }
@@ -15436,3 +15455,20 @@ input[type=radio] {
     width: 40px;
     right: 31px;
 }
+.site-by a  {
+  color: #fff;
+  font-weight: 500;
+}
+
+.site-by a:hover {
+  text-decoration: underline;
+  color:#fd9822;
+}
+
+ .phone-set svg{
+  position: absolute;
+    top: -3px !important;
+    left: -2px !important;
+    font-size: 20px;
+    color: var(--it-theme-1);
+} 
