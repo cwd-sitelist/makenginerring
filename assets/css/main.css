@@ -11430,6 +11430,7 @@ body .ui-tooltip {
 @media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .it-contact-style-3 .it-contact-list span {
     font-size: 19px;
+    margin-top: 20px;
   }
 }
 .it-contact-style-3 .it-contact-left p {
@@ -14701,7 +14702,7 @@ input[type=radio] {
 
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .it-choose-3-area {
-    padding: 120px 0;
+    padding: 60px 0;
   }
 }
 .it-choose-3-bg {
@@ -15490,4 +15491,23 @@ input[type=radio] {
 
 .it-menu-mobile ul li.active > a:hover {
       color: var(--it-theme-1)!important;
+}
+@media (max-width: 768px) {
+  .it-contact-list-icon {
+     width: 50px;
+     height: 50px;
+
+  }
+  .it-contact-list-icon svg{
+        width: 60px;
+        height: 24px;
+        margin-top: -39px;
+    }
+    
+  }
+  .it-contact-style-3 .it-contact-list-icon span{
+    width: 60px;
+    height: 60px;
+    
+  }
 }

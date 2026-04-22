@@ -958,3 +958,28 @@
 .pr-200{
     padding-right:200px
 }
+
+@media (max-width: 768px) {
+
+  /* Reduce large padding-top */
+  .pt-100 { padding-top: 50px !important; }
+  .pt-120 { padding-top: 60px !important; }
+  .pt-150 { padding-top: 70px !important; }
+
+  /* Reduce large padding-bottom */
+  .pb-100 { padding-bottom: 50px !important; }
+  .pb-120 { padding-bottom: 60px !important; }
+  .pb-150 { padding-bottom: 70px !important; }
+
+  .it-project-area{
+    padding: 50px 0 !important;
+
+  }
+  .it-choose-area,.it-contact-area,.it-about-4-area{
+    padding: 50px 0 !important;
+  }
+  .it-footer-widget-logo img {
+    max-width: 60% !important;
+}
+
+}
