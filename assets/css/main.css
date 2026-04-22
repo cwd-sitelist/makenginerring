@@ -1107,7 +1107,7 @@ input[type=color] {
 }
 
 .scroll-top.open {
-  bottom: 80px;
+  bottom: 50px;
   right: 30px;
 }
 
@@ -1315,7 +1315,7 @@ input[type=color] {
   margin-bottom: 20px;
 }
 .itoffcanvas__info .offcanva-title {
-  color: var(--it-common-white);
+  color: #fd9822;
   margin: 30px 0 40px 0;
   font-size: 20px;
   font-weight: 600;
@@ -1331,7 +1331,7 @@ input[type=color] {
   border-radius: 50px;
   font-weight: 400;
   font-size: 21px;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 .itoffcanvas__info-address span {
   display: block;
@@ -5355,7 +5355,7 @@ body .ui-tooltip {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.62;
-  margin-top: 9px;
+  margin-top: 5px;
   transition: 0.3s;
   color: var(--it-common-white);
 }
@@ -5572,7 +5572,7 @@ body .ui-tooltip {
   color:#fd9822;
 }
 .it-copyright-style-2.it-copyright-border {
-  border-top: none;
+  border-top: 1px solid #ddd;
   padding: 38px 0;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
@@ -7420,7 +7420,7 @@ body .ui-tooltip {
 .it-about-funfact-number {
   font-weight: 600;
   font-size: 80px;
-  color: #FFB21D;
+  color: #fd9822;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px) {
   .it-about-funfact-number {
@@ -10199,7 +10199,7 @@ body .ui-tooltip {
 .it-project-client-info a {
   font-size: 14px;
   letter-spacing: 0.01em;
-  color: var(--it-theme-1);
+  color: #fd9822;
   display: inline-block;
   text-decoration: transparent;
 }
@@ -10223,7 +10223,7 @@ body .ui-tooltip {
   border-radius: 50%;
   padding: 0;
   margin-left: -20px;
-  background-color: var(--it-theme-1);
+  background-color: #000;
 }
 .it-project-client-btn svg {
   display: inline-block;
@@ -10246,7 +10246,7 @@ body .ui-tooltip {
   height: 82%;
   border-radius: 1000px;
   z-index: -1;
-  background-color: var(--it-common-black);
+  background-color: var(--it-theme-1);
 }
 .it-project-client-wrap:hover .it-project-client-btn svg {
   transform: rotate(360deg);
@@ -11106,9 +11106,7 @@ body .ui-tooltip {
     font-size: 16px;
   }
 }
-.it-contact-social a:hover {
-  color: var(--it-theme-1);
-}
+
 .it-contact-social span {
   font-weight: 500;
   font-size: 24px;
@@ -15449,7 +15447,7 @@ input[type=radio] {
 
 .whatsappfooter {
     position: fixed;
-    bottom: 132px;
+    bottom: 88px;
     height: 50px;
     z-index: 99;
     width: 40px;
@@ -15467,8 +15465,29 @@ input[type=radio] {
 
  .phone-set svg{
   position: absolute;
-    top: -3px !important;
+    top: 1px !important;
     left: -2px !important;
     font-size: 20px;
     color: var(--it-theme-1);
 } 
+.active{
+  color:#fd9822;
+}
+
+.it-contact-social a svg:hover{
+  color:#fd9822;
+ 
+}
+.it-contact-social a svg{
+     width:30px;
+    height:30px;
+}
+
+.it-menu-mobile ul li.active > a {
+    color: var(--it-theme-1)!important;
+    font-weight: 600;
+}
+
+.it-menu-mobile ul li.active > a:hover {
+      color: var(--it-theme-1)!important;
+}
