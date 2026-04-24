@@ -5355,7 +5355,7 @@ body .ui-tooltip {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.62;
-  margin-top: 5px;
+  margin-top: 10px;
   transition: 0.3s;
   color: var(--it-common-white);
 }
@@ -11395,6 +11395,7 @@ body .ui-tooltip {
 @media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .it-contact-style-3 .it-contact-list-box {
     padding: 20px 20px;
+    display: block !important
   }
 }
 .it-contact-style-3 .it-contact-list-icon span {
