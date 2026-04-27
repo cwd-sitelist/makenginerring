@@ -15498,24 +15498,30 @@ button.scroll-top.scroll-to-target.open img {
     padding: 0px 3px 3px;
 }
 
+/* Show only on mobile */
+@media (max-width: 767px) {
+  .it-slider-dots {
+       display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        position: absolute;
+        bottom: 0px;
+        top: 71%;
+        left: 14%;
+        transform: translateX(-50%);
+        z-index: 9;
+  }
+
+  /* Swiper default dots */
+  .it-slider-dots .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    background: #ccc;
+    opacity: 1;
+    border-radius: 50%;
+  }
 
 
-.swiper-button-prev,
-.swiper-button-next {
-      display: none;
 }
 
-@media (max-width: 768px) {
-    .swiper-button-prev,
-    .swiper-button-next {
-        display: block !important;
-    }
-    .swiper-button-prev,
-.swiper-button-next {
-    color: #fff;
-    width: 250px;
-    height: 40px;
-    margin-top: 270px;
-  
-}
-}
