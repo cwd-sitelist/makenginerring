@@ -360,3 +360,21 @@
 	});
 
 })(jQuery);
+
+
+
+
+var slider = new Swiper('.it-slider-active', {
+    loop: true,
+    slidesPerView: 1,
+
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+    pagination: {
+        el: '.it-slider-dots',
+        clickable: true,
+    },
+});

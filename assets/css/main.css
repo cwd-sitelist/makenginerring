@@ -15497,3 +15497,26 @@ button.scroll-top.scroll-to-target.open img {
     filter: invert(1);
     padding: 0px 3px 3px;
 }
+
+
+
+.swiper-button-prev,
+.swiper-button-next {
+      display: none;
+}
+
+@media (max-width: 768px) {
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: block !important;
+    }
+    .swiper-button-prev,
+.swiper-button-next {
+    color: #fff;
+    width: 250px;
+    height: 40px;
+    margin-top: 270px;
+  
+}
+
+}
