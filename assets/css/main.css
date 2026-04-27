@@ -1107,7 +1107,7 @@ input[type=color] {
 }
 
 .scroll-top.open {
-  bottom: 50px;
+  bottom: 32px;
   right: 30px;
 }
 
